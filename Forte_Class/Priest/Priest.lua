@@ -9,7 +9,6 @@ if FW.CLASS == "PRIEST" then
 	local ST = FW:Module("Timer");
 	local CA = FW:Module("Casting");
 	local CD = FW:Module("Cooldown");
-	
 	FW:RegisterSet("Absolution Regalia",31061,31064,31067,31070,31065,34434,34528,34563);
 	FW:RegisterSet("Velen's/Zabra's Regalia",
 		48072,48073,48074,48075,48076,
@@ -28,12 +27,14 @@ if FW.CLASS == "PRIEST" then
  		
  		:AddSpell(  589,  18,"Default",	F.TICKS):SetSpellModSetB("Absolution Regalia",2,3) -- Shadow Word: Pain
 		:AddSpell(34914,  15,"Default",	F.TICKS):SetSpellModSetB("Velen's/Zabra's Regalia",2,6) -- Vampiric Touch
+		:AddSpell(204197, 20,"Default", F.TICKS):SetTickSpeed(2) -- Purify the Wicked
  		:AddSpell(34433,  12,"Pet",		F.SUMMON) -- Shadowfiend
  		:AddSpell( 8122,   8,"Crowd",	F.AOE):SetSpellModGlph(56177,2) -- Psychic Scream
  		:AddSpell( 9484,  50,"Crowd",	F.UNIQUE) -- Shackle Undead
 		--:AddSpell(  453,  15,"Crowd",	F.UNIQUE) -- Mind Soothe
 		:AddSpell(   17,  15,"Buff",	F.BUFF) -- Power Word: Shield
 		:AddSpell(  139,  12,"Heal",	F.HOT) -- Renew
+		:AddSpell(194384, 18,"Heal",    F.BUFF) -- Atonement
 		
 		:AddSpell(158831,  6,"Default",F.TICKS):SetTickSpeed(1) -- Devouring Plague
 		
