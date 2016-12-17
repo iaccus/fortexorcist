@@ -193,19 +193,19 @@ do
 		local name = string_match(text, "|Hplayer:([^:]+).-|h.-|h")		
 		local bnpres = string_match(text, "|k:(%d+):(%d+):BN_WHISPER")
 		
-		if bnpres then
-			local toon = GetToon(bnpres) 
-			local highlight = ALEAADDONS_CHATHOOKS_LIST[toon]
+--		if bnpres then
+--			local toon = GetToon(bnpres)
+--			local highlight = ALEAADDONS_CHATHOOKS_LIST[toon]
 
-			if highlight then			
-				text = string_gsub(text, "|HBNplayer:", format(highlight,fontSize, fontSize) .."%1")
-			end
-		elseif name then
-			local highlight = ALEAADDONS_CHATHOOKS_LIST[name]
-			if highlight then
-				text = string_gsub(text, "|Hplayer:", format(highlight,fontSize, fontSize).."%1")
-			end			
-		end
+--			if highlight then
+--				text = string_gsub(text, "|HBNplayer:", format(highlight,fontSize, fontSize) .."%1")
+--			end
+--		elseif name then
+--			local highlight = ALEAADDONS_CHATHOOKS_LIST[name]
+--			if highlight then
+--				text = string_gsub(text, "|Hplayer:", format(highlight,fontSize, fontSize).."%1")
+--			end
+--		end
 
 		return hooks[frame](frame, text, red, green, blue, messageId, holdTime)
 	end
