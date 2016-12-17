@@ -21,7 +21,7 @@
 
 if FW.CLASS == "DRUID" then
 	local FWL = FW.L;
-	FWL.BERSERK = GetSpellInfo(50334);
+	FWL.BERSERK = GetSpellInfo(106951);
 	FWL.FERAL_CHARGE = GetSpellInfo(16979);
 	FWL.MANGLE = GetSpellInfo(33917);
 	FWL.SKULL_BASH = GetSpellInfo(106839);
