@@ -2295,7 +2295,7 @@ FW:RegisterToEvent("VARIABLES_LOADED",FW_Variables);
 FW:RegisterDelayedLoadEvent(FW_Scan);
 FW:RegisterDelayedLoadEvent(FW_RelevantSetBonus);
 FW:RegisterDelayedLoadEvent(FW_RelevantTalent);
-FW:RegisterDelayedLoadEvent(FW_RelevantGlyph);
+-- FW:RegisterDelayedLoadEvent(FW_RelevantGlyph);
 FW:RegisterDelayedLoadEvent(FW_RelevantStance);
 FW:RegisterDelayedLoadEvent(FW_TimedRaidParty);
 FW:RegisterDelayedLoadEvent(FW_PartyRaid);
@@ -2331,9 +2331,9 @@ FW:RegisterVariablesEvent(function()
 	]]
 	FW:RegisterToEvent("UNIT_PET", function(event,arg1) if arg1 == "player" then FW:Changed("pet");end end);
 
-	FW:RegisterToEvent("GLYPH_ADDED", 	function() FW:RegisterThrottle(FW_RelevantGlyph); end);
-	FW:RegisterToEvent("GLYPH_REMOVED", function() FW:RegisterThrottle(FW_RelevantGlyph); end);
-	FW:RegisterToEvent("GLYPH_UPDATED", function() FW:RegisterThrottle(FW_RelevantGlyph); end);
+	-- FW:RegisterToEvent("GLYPH_ADDED", 	function() FW:RegisterThrottle(FW_RelevantGlyph); end);
+	-- FW:RegisterToEvent("GLYPH_REMOVED", function() FW:RegisterThrottle(FW_RelevantGlyph); end);
+	-- FW:RegisterToEvent("GLYPH_UPDATED", function() FW:RegisterThrottle(FW_RelevantGlyph); end);
 
 	FW:RegisterToEvent("GROUP_ROSTER_UPDATE",FW_TimedRaidParty);
 
