@@ -112,10 +112,15 @@ if FW.CLASS == "DRUID" then
         :AddBuff(22812) -- Barkskin
         :AddBuff(16689) -- Nature's Grasp
         :AddBuff(16886) -- Nature's Grace
-        :AddBuff(48505) -- Starfall
+        :AddBuff(191034) -- Starfall
+        :AddBuff(157228) -- Owlkin Frenzy
+        :AddBuff(164545) -- Solar Empowerment
+        :AddBuff(164547) -- Lunar Empowerment
         :AddBuff(77495) -- Harmony
         :AddBuff(202425) -- Warrior of Elune
         :AddBuff(102280) -- Displacer Beast
+        :AddBuff(209406) -- Oneth's Intuition (Legendary bracers)
+        :AddBuff(209407) -- Oneth's Overconfidence (Legendary bracers)
 
         -- Feral Buffs
         :AddBuff(61684) -- Dash
@@ -135,6 +140,7 @@ if FW.CLASS == "DRUID" then
         :AddBuff(203964) -- Galactic Guardian
         :AddBuff(192083) -- Mark of Ursol
         :AddBuff(192081) -- Ironfur
+        :AddBuff(93622) -- Mangle!
 
         -- Resto Buffs
         :AddBuff(16870) -- Clearcasting
