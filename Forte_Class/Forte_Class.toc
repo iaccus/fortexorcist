@@ -9,6 +9,8 @@
 
 DeathKnight\Localization.lua
 DeathKnight\DeathKnight.lua
+DemonHunter\Localization.lua
+DemonHunter\DemonHunter.lua
 Druid\Localization.lua
 Druid\Druid.lua
 Hunter\Localization.lua
